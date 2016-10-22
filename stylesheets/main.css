@@ -1,0 +1,48 @@
+/*Global*/
+
+.page {
+	height: 100vh;
+}
+
+#navbar {
+	position: fixed;
+	background-color: black;
+	width: 100vw;
+	height: 10%;
+}
+
+#navbar a {
+	text-decoration: none;
+	color: white;
+}
+
+/*Home Page*/
+#home-page {
+	background-color: purple;
+}
+
+/*Work Page*/
+#work-page {
+	background-color: white;
+}
+
+.app-snippets {
+	height: 45%;
+}
+
+#top-left {
+	background-color: blue;
+}
+
+
+/*Skills Page*/
+#skills-page {
+	background-color: pink;
+}
+
+
+/*Contact Page*/
+#contact-page {
+	background-color: blue;
+}
+
