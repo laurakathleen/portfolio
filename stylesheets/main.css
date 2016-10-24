@@ -1,48 +1,211 @@
-/*Global*/
+/*****Color & Font Key
+black-color: #343338;
+white: #FFFFFF;
+off-white: #CDD5D1;
+off-purple: #6F7184;
+rose: #D8C0B8;
 
+font-family: 'Poppins', sans-serif;
+***************/
+
+/*****Global*****/
 .page {
 	height: 100vh;
 }
 
 #navbar {
 	position: fixed;
-	background-color: black;
+	background-color: #343338;
 	width: 100vw;
 	height: 10%;
+	text-align: center;
 }
 
 #navbar a {
 	text-decoration: none;
-	color: white;
+	color: #FFFFFF;
+	font-family: 'Poppins', sans-serif;
+	font-size: 1.35em;
+	text-align: center;
 }
 
-/*Home Page*/
-#home-page {
-	background-color: purple;
+/*****Home Page*****/
+#hero-img {
+	width: 100vw;
+	height: 100vh;
 }
 
-/*Work Page*/
+#box {
+	width: 50%;
+	height: 30%;
+	border: 0.01em solid #ffffff;
+	position: absolute;
+	margin-top: 35vh;
+}
+
+#name-heading {
+	color: #ffffff;
+	text-align: center;
+	margin-top: 1em;
+	font-family: 'Poppins', sans-serif;
+}
+
+#dev-heading {
+	color: #ffffff;
+	text-align: center;
+	font-family: 'Poppins', sans-serif;
+	font-size: 1.45em;
+}
+
+/*****About Page*****/
+#about-page {
+	background-color: #D8C0B8;
+	height: 100vh;
+}
+
+#about-me-blurb {
+	margin-top: 30vh;
+	color: #343338;
+	font-weight: bold;
+	font-size: 1.25em;
+}
+
+#about-me-blurb p {
+	font-family: 'Poppins', sans-serif;
+}
+
+/*****Work Flow Page*****/
+#work-flow-page {
+	height: 100vh;
+	background-color: #343338;
+}
+
+.work-flow-text {
+	text-align: center;
+	height: 100vh;
+	background-color: #ffffff;
+	color: #343338;
+}
+
+.work-flow-text h3, p {
+	margin-top: 45vh;
+	font-family: 'Poppins', sans-serif;
+}
+
+.work-flow-text p {
+	margin: 0 15%;
+	font-size: 1.25em;
+}
+
+/*Row Class*/
+.work-flow-snippets {
+	height: 45%;
+	width: 100%;
+}
+
+.steps {
+	min-width: 50%;
+	height: 50vh;
+	text-align: center;
+	color: #ffffff;
+}
+
+.steps h3 {
+	margin-top: 30%;
+	font-family: 'Poppins', sans-serif;
+	text-align: center;
+}
+
+.steps ul li {
+	list-style: none;
+	text-align: center;
+	font-family: 'Poppins', sans-serif;
+	font-size: 1.10em;
+}
+
+/*****Work Page*****/
 #work-page {
-	background-color: white;
+	background-color: #FFFFFF;
+	height: 100vh;
 }
 
+.work-text {
+	text-align: center;
+	height: 100vh;
+}
+
+.work-text h3, p {
+	margin-top: 45vh;
+	font-family: 'Poppins', sans-serif;
+	color: #343338;
+}
+
+.work-text p {
+	font-size: 1.25em;
+}
+
+/*Row Class*/
 .app-snippets {
 	height: 45%;
+	width: 100%;
 }
 
-#top-left {
-	background-color: blue;
+/*Preview Div Class*/
+.preview {
+	width: 100%;
+	height: auto;
 }
 
-
-/*Skills Page*/
-#skills-page {
-	background-color: pink;
+/*Preview Image Class*/
+.img-preview {
+	min-width: 100%;
+	height: 50vh;
 }
 
+.img-preview img {
+}
 
-/*Contact Page*/
+.main-preview {
+	height: 100vh;
+	margin-top: 9%;
+	position: absolute;
+	background-color: #fff;
+}
+
+.list-enter-active, .list-leave-active {
+  transition: all 1s;
+}
+/*****Contact Page*****/
 #contact-page {
-	background-color: blue;
+	height: 100vh;
+	background-color: #343338;
+}
+
+.contact-text {
+	text-align: center;
+	margin-top: 10%;
+	color: #ffffff;
+}
+
+.contact-text h3, h5 {
+	font-family: 'Poppins', sans-serif;
+}
+
+.icon-container {
+	display: inline-block;
+	margin-top: 10%;
+	text-align: center;
+}
+
+.icon {
+	width: 15%;
+	padding: 0.5em;
+}
+
+#copyright {
+	text-align: center;
+	color: #ffffff;
+	margin-top: 8%;
+	font-family: 'Poppins', sans-serif;
 }
 

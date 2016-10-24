@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
 	<title>Laura Russell</title>
+
 <!-- My Stylesheet -->
 <link rel="stylesheet" href="../stylesheets/main.css">
 
@@ -14,32 +15,134 @@
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/foundation/6.2.4/foundation.min.css">
 <!-- Compressed JavaScript -->
 <script type="text/javascript" src="https://cdn.jsdelivr.net/foundation/6.2.4/foundation.min.js"></script>
-
+<link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet">
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.0.3/vue.min.js"></script>
 <!-- My JavaScript -->
 <script type="text/javascript" src="../javascripts/app.js"></script>
 </head>
 <body>
 	<ul class="vertical medium-horizontal menu" id="navbar">
 	  <li><a href="#home-page">Home</a></li>
-	  <li><a href="#work-page">My Work</a></li>
-	  <li><a href="#skills-page">Skills</a></li>
+	  <li><a href="#about-page">About</a></li>
+	  <li><a href="#work-flow-page">Work Flow</a></li>
+	  <li><a href="#work-page">Work</a></li>
 	  <li><a href="#contact-page">Contact</a></li>
 	</ul>
 	<section class="page" id="home-page">
+		<div class="hero-container">
+			<div class="expanded row">
+				<div class="medium-6 medium-offset-3" id="box">
+					<h1 id="name-heading">Laura Russell</h1>
+					<h3 id="dev-heading">Full stack web developer</h3>
+				</div>
+			</div>
+			<img id="hero-img" src="https://static.pexels.com/photos/1322/sea-ocean-fog-mist-large.jpg">
+		</div>
+	</section>
+	<section class="page" id="about-page">
+		<div class="expanded row">
+			<div class="medium-6 medium-offset-3 columns" id="about-me-blurb">
+				<p>My name is Laura Russell and I am a full-stack web developer in the San Francisco Bay Area, with a particular liking for that wondrous Rails magic and clean front-end design. When I'm not coding, you can find me walking my dog or shark-watching by the bay with my husband.</p>
+			</div>
+		</div>
+	</section>
+		<section class="page" id="work-flow-page">
+		<div class="expanded row work-flow-snippets">
+			<div class="medium-6 columns">
+				<div class="expanded row all-steps">
+					<div class="medium-6 columns steps" id="step-one">
+						<h3>Planning:</h3>
+						<ul>
+							<li>User Stories</li>
+							<li>Trello</li>
+							<li>Wire frames</li>
+						</ul>
+					</div>
+					<div class="medium-6 columns steps" id="step-two">
+						<h3>Implementation:</h3>
+						<ul>
+							<li>Reliable frameworks including Rails, Node, and Express</li>
+						</ul>
+					</div>
+					<div class="medium-6 columns steps" id="step-four">
+						<h3>Collaboration:</h3>
+						<ul>
+							<li>Git</li>
+							<li>Github</li>
+						</ul>
+					</div>
+					<div class="medium-6 columns steps" id="step-three">
+		  				<h3>Interactivity:</h3>
+						<ul>
+							<li>Ruby</li>
+							<li>JavaScript</li>
+							<li>jQuery</li>
+							<li>Angular</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<div class="medium-6 columns work-flow-text">
+				<h3>My Workflow</h3>
+				<p>I've adopted a work flow that starts with big ideas and gets implemented in little steps.</p>
+			</div>
+		</div>
 	</section>
 	<section class="page" id="work-page">
-		<div class="row app-snippets" id="first-row">
-		  <div class="medium-3 medium-offset-6 columns preview" id="top-left">6 columns</div>
-		  <div class="medium-3 columns preview" id="top-right">6 columns</div>
+		<div class="expanded row app-snippets">
+			<div class='medium-6 columns work-text'>
+				<h3>A handful of my apps</h3>
+				<p>Click any tile for more details</p>
+			</div>
+			<div class="medium-6 columns preview" id="apps">
+				<div class="expanded row">
+					<div class="medium-6 columns preview" id="top-left">
+						<img class="img-preview" id="racing-preview" v-on:click="appClick('#top-left')" src="../stylesheets/images/racing-game.png">
+					</div>
+					<div class="medium-6 columns preview" id="top-right">
+						<img class="img-preview" id="nomad-preview" v-on:click="appClick('#top-right')" src="../stylesheets/images/nomad.png">
+					</div>
+					<div class="medium-6 columns preview" id="bottom-left">
+						<img class="img-preview" id="best-hour-preview" v-on:click="appClick('#bottom-left')" src="../stylesheets/images/the-best-hour.png">
+					</div>
+					<div class="medium-6 columns preview" id="bottom-right">
+		  				<img class="img-preview" id="library-preview" v-on:click="appClick('#bottom-right')" src="../stylesheets/images/library-app.png">
+					</div>
+				</div>
+			</div>
 		</div>
-		<div class="row app-snippets" id="second-row">
-		  <div class="medium-3 medium-offset-6 columns preview" id="bottom-left">12/6/4 columns</div>
-		  <div class="medium-3 columns preview" id="bottom-right">12/6/8 columns</div>
-		</div>
-	</section>
-	<section class="page" id="skills-page">
 	</section>
 	<section class="page" id="contact-page">
+		<div class="expanded row">
+			<div class="medium-6 medium-offset-3 columns contact-text">
+				<h3>Get in touch</h3>
+				<h5>Reach out with any questions and inquiries</h5>
+			</div>
+		</div>
+		<div class="expanded row">
+			<div class="medium-6 medium-offset-3 columns icon-container">
+				<img class="icon" src="../stylesheets/images/email-icon.png">
+				<img class="icon" src="../stylesheets/images/github-icon.png">
+				<img class="icon" src="../stylesheets/images/linkedin-icon.png">
+			</div>
+		</div>
+		<div class="row">
+			<div class="medium-4 medium-offset-4 columns"> 
+				<p id="copyright">&copy Laura Russell 2016</p>
+			</div>
+		</div>	
 	</section>
+
+	<script>
+		new Vue({
+			el: '#apps',
+			methods: {
+				appClick: function(app){
+					$(app).toggleClass('medium-4 columns');
+					$(app).toggleClass('main-preview');
+				}
+			}
+		})
+	</script>
 </body>
 </html>
