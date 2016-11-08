@@ -111,6 +111,20 @@ font-family: 'Poppins', sans-serif;
 	color: #ffffff;
 }
 
+#step-one {
+	border-right: 1px solid #fff;
+	border-bottom: 1px solid #fff;
+}
+
+#step-two {
+	border-bottom: 1px solid #fff;
+}
+
+#step-four {
+	border-right: 1px solid #fff;
+}
+
+
 .steps h3 {
 	margin-top: 30%;
 	font-family: 'Poppins', sans-serif;
