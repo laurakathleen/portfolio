@@ -42,7 +42,7 @@
 	<section class="page" id="about-page">
 		<div class="expanded row">
 			<div class="medium-6 medium-offset-3 columns" id="about-me-blurb">
-				<p>My name is Laura Russell and I am a full-stack web developer in the San Francisco Bay Area, with a particular liking for that wondrous Rails magic and clean front-end design. When I'm not coding, you can find me walking my dog or shark-watching by the bay with my husband.</p>
+				<p>My name is Laura Russell and I am a full-stack web developer in the San Francisco Bay Area, with a particular liking for that wondrous Rails magic and clean front-end design. When I'm not coding, you can find me walking my dog, shark-watching by the bay with my husband, or on a roadtrip with a front seat full of gatorade and goldfish.</p>
 			</div>
 		</div>
 	</section>
@@ -53,7 +53,7 @@
 					<div class="medium-6 columns steps" id="step-one">
 						<h3>Planning:</h3>
 						<ul>
-							<li>User Stories</li>
+							<li>User Stories,
 							<li>Trello</li>
 							<li>Wire frames</li>
 						</ul>
@@ -90,40 +90,46 @@
 	</section>
 	<section class="page" id="work-page">
 		<div class="expanded row app-snippets">
-			<div class='medium-6 columns work-text'>
-				<h3>A handful of my apps</h3>
-				<p>Click any tile for more details</p>
+			<div class="medium-6 columns work-text" id="few-short-miles">
+				<h3>A Few Short Miles</h3>
+				<p>A Few Short Miles is a an app I created for military families to uphold a strong community through team-focused exercise while a loved one is deployed.  Users specify their home base and their loved one's deployment location upon creating an account, which then filters out which teams they can join so that their teammates are within their own community.</p>
+				<p>I built this app myself from start to finish, using <span>Ruby on Rails</span>, <span>PostgreSQL</span>, <span>JavaScript</span>, <span>jQuery</span>, <span>Bootstrap</span>, and gems including <span>Bcrypt</span>, <span>Simple Calendars</span>, and <span>HighCharts</span>.</p>
 			</div>
-			<div class="medium-6 columns preview" id="apps">
-				<div class="expanded row">
-					<div class="medium-6 columns preview" id="top-left">
-						<img class="img-preview" id="racing-preview" v-on:click="appClick('#top-left')" src="stylesheets/images/racing-game.png">
-					</div>
-					<div class="medium-6 columns preview" id="top-right">
-						<img class="img-preview" id="nomad-preview" v-on:click="appClick('#top-right')" src="stylesheets/images/nomad.png">
-					</div>
-					<div class="medium-6 columns preview" id="bottom-left">
-						<img class="img-preview" id="best-hour-preview" v-on:click="appClick('#bottom-left')" src="stylesheets/images/the-best-hour.png">
-					</div>
-					<div class="medium-6 columns preview" id="bottom-right">
-		  				<img class="img-preview" id="library-preview" v-on:click="appClick('#bottom-right')" src="stylesheets/images/library-app.png">
-					</div>
-				</div>
+			<div class="medium-6 columns preview" id="top-left">
+				<img class="img-preview" id="racing-preview" src="stylesheets/images/a-few-short-miles.png">
 			</div>
 		</div>
 	</section>
+
+
+
+	<!-- <div class="medium-6 columns preview" id="apps">
+				<div class="expanded row">
+					
+					<div class="medium-6 columns preview" id="top-right">
+						<img class="img-preview" id="nomad-preview" src="stylesheets/images/Within-Reach-Welcome.png">
+					</div>
+					<div class="medium-6 columns preview" id="bottom-left">
+						<img class="img-preview" id="best-hour-preview" src="stylesheets/images/the-best-hour.png">
+					</div>
+					<div class="medium-6 columns preview" id="bottom-right">
+		  				<img class="img-preview" id="library-preview" src="stylesheets/images/nomad.png">
+					</div>
+				</div>
+			</div> -->
 	<section class="page" id="contact-page">
 		<div class="expanded row">
 			<div class="medium-6 medium-offset-3 columns contact-text">
 				<h3>Get in touch</h3>
 				<h5>Reach out with any questions and inquiries</h5>
+				<a id="resume" href="/images/myw3schoolsimage.jpg" download><h5>Download my resume</h5></a>
 			</div>
 		</div>
 		<div class="expanded row">
 			<div class="medium-6 medium-offset-3 columns icon-container">
-				<img class="icon" src="stylesheets/images/email-icon.png">
-				<img class="icon" src="stylesheets/images/github-icon.png">
-				<img class="icon" src="stylesheets/images/linkedin-icon.png">
+				<a href="mailto:laurakaterussell@gmail.com"><img class="icon" src="stylesheets/images/email-icon.png"></a>
+				<a href="https://github.com/laurakathleen"><img class="icon" src="stylesheets/images/github-icon.png"></a>
+				<a href="https://www.linkedin.com/in/laurakathleenrussell"><img class="icon" src="stylesheets/images/linkedin-icon.png"></a>
 			</div>
 		</div>
 		<div class="row">
@@ -140,9 +146,11 @@
 				appClick: function(app){
 					$(app).toggleClass('medium-4 columns');
 					$(app).toggleClass('main-preview');
+					$(this).siblings(".preview").hide();
 				}
 			}
 		})
+
 	</script>
 </body>
 </html>
