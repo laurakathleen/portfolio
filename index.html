@@ -10,7 +10,7 @@
 <link rel="stylesheet" href="stylesheets/main.css">
 
 <!-- Vendor Scripts -->
-<script   src="https://code.jquery.com/jquery-3.1.1.min.js"   integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="   crossorigin="anonymous"></script>
+<script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
 <!-- Compressed CSS -->
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/foundation/6.2.4/foundation.min.css">
 <!-- Compressed JavaScript -->
@@ -90,37 +90,48 @@
 	</section>
 	<section class="page" id="work-page">
 		<div class="expanded row app-snippets">
-			<div class="medium-6 columns work-text" id="few-short-miles">
+			<div class="medium-6 columns work-text" id="a-few-short-miles">
 				<h3>A Few Short Miles</h3>
 				<p>A Few Short Miles is a an app I created for military families to uphold a strong community through team-focused exercise while a loved one is deployed.  Users specify their home base and their loved one's deployment location upon creating an account, which then filters out which teams they can join so that their teammates are within their own community.</p>
 				<p>I built this app myself from start to finish, using <span>Ruby on Rails</span>, <span>PostgreSQL</span>, <span>JavaScript</span>, <span>jQuery</span>, <span>Bootstrap</span>, and gems including <span>Bcrypt</span>, <span>Simple Calendars</span>, and <span>HighCharts</span>.</p>
+				<p>See it live: <span><a href="https://fewshortmiles.herokuapp.com/">A Few Short Miles</a></span></p>
+				<p>Login username: laura & password: password</p>
 			</div>
 			<div class="medium-6 columns preview" id="top-left">
-				<img class="img-preview" id="racing-preview" src="stylesheets/images/a-few-short-miles.png">
+				<a href="https://fewshortmiles.herokuapp.com/"><img class="img-preview" id="racing-preview" src="stylesheets/images/Few-Short-Miles-team-show.png"></a>
 			</div>
 		</div>
 	</section>
-
-
-
-	<!-- <div class="medium-6 columns preview" id="apps">
-				<div class="expanded row">
-					
-					<div class="medium-6 columns preview" id="top-right">
-						<img class="img-preview" id="nomad-preview" src="stylesheets/images/Within-Reach-Welcome.png">
-					</div>
-					<div class="medium-6 columns preview" id="bottom-left">
-						<img class="img-preview" id="best-hour-preview" src="stylesheets/images/the-best-hour.png">
-					</div>
-					<div class="medium-6 columns preview" id="bottom-right">
-		  				<img class="img-preview" id="library-preview" src="stylesheets/images/nomad.png">
-					</div>
-				</div>
-			</div> -->
+	<section class="page">
+		<div class="expanded row app-snippets">
+			<div class="medium-6 columns preview">
+				<a href="https://pacific-retreat-93110.herokuapp.com/"><img class="img-preview" id="nomad-preview" src="stylesheets/images/Within-Reach-Welcome.png"></a>
+			</div>
+			<div class="medium-6 columns work-text" id="within-reach">
+				<h3>Within Reach</h3>
+				<p>A mobile-friendly app that I created with three other developers in one week, geared toward users who rely on Dialectical Behavior Therapy (DBT) as part of their recovery process for eating disorders. My contributions were backend-focused, including setting up the models, controllers, routes, self-joining associations, and front-end partials. Built with <span>Ruby on Rails</span>, <span>PostgreSQL</span>, <span>JavaScript</span>, <span>jQuery</span>, <span>SASS</span>, <span>Materialize</span>, and gems including <span>Kaminari</span> and <span>Bcrypt</span>.</p>
+				<p>See it live: <span><a href="https://pacific-retreat-93110.herokuapp.com/">Within Reach</a></span></p>
+				<p>Login as a patient username: lrussell & password: password</p>
+				<p>Login as a professional username: doctor & password:  password</p>
+			</div>
+		</div>
+	</section>
+	<section class="page">
+		<div class="expanded row app-snippets">
+			<div class="medium-6 columns work-text" id="the-best-hour">
+				<h3>The Best Hour</h3>
+				<p>A full stack app that I created with one other developer in one week, designed so users can check out happy hours reviews in San Francisco. The vast majority of the backend of this project was spent pair programming either together or over screen hero, however, I took on the front-end design for the happy hour review pages. Built with <span>MongoDB</span>, <span>Express</span>, <span>Node.js</span>, <span>Materialize</span>, <span>Javascript</span>, and <span>jQuery</span>.</p>
+				<p>See it live: <span><a href="https://morning-spire-17654.herokuapp.com/">The Best Hour</a></span></p>
+			</div>
+			<div class="medium-6 columns preview">
+				<a href="https://morning-spire-17654.herokuapp.com/"><img class="img-preview" id="best-hour-preview" src="stylesheets/images/the-best-hour.png"></a>
+			</div>
+		</div>
+	</section>
 	<section class="page" id="contact-page">
 		<div class="expanded row">
 			<div class="medium-6 medium-offset-3 columns contact-text">
-				<h3>Get in touch</h3>
+				<h3>Let's get in touch!</h3>
 				<h5>Reach out with any questions and inquiries</h5>
 				<a id="resume" href="/images/myw3schoolsimage.jpg" download><h5>Download my resume</h5></a>
 			</div>
@@ -138,19 +149,5 @@
 			</div>
 		</div>	
 	</section>
-
-	<script>
-		new Vue({
-			el: '#apps',
-			methods: {
-				appClick: function(app){
-					$(app).toggleClass('medium-4 columns');
-					$(app).toggleClass('main-preview');
-					$(this).siblings(".preview").hide();
-				}
-			}
-		})
-
-	</script>
 </body>
 </html>
