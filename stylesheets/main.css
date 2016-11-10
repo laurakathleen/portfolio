@@ -136,6 +136,7 @@ font-family: 'Poppins', sans-serif;
 	text-align: center;
 	font-family: 'Poppins', sans-serif;
 	font-size: 1.10em;
+	margin-left: -1.5em;
 }
 
 /*****Work Page*****/
@@ -230,5 +231,116 @@ span {
 	color: #ffffff;
 	margin-top: 8%;
 	font-family: 'Poppins', sans-serif;
+}
+
+
+/******* Media Queries ******/
+@media (min-width: 200px) and (max-width: 600px) {
+
+/*****Global*****/
+
+	#navbar {
+		height: 6%;
+	}
+
+	#navbar li {
+		display: inline;
+	}
+
+	#navbar a {
+		font-size: 0.7em;
+		display: inline;
+	}
+
+/*****Home Page*****/
+
+	#box {
+		width: 60%;
+		margin: 50% 20%;
+	}
+
+/*****About Page*****/
+
+	#about-me-blurb {
+		text-align: center;
+	}
+
+/*****Work Flow Page*****/
+
+	#work-flow-page {
+		background-color: #ffffff;
+	}
+
+	.work-flow-text {
+		position: absolute;
+		margin: 0 auto;
+		height: 50%;
+	}
+
+	.work-flow-text h3, p {
+		margin-top: 20%;
+	}
+
+	.steps {
+		background-color: #343338;
+		height: auto;
+		margin-left: 55%;
+		padding-bottom: 20%;
+	}
+
+  	#step-one {
+  		border: none;
+  		margin-top: 160%;
+  		
+  		height: 50%;
+  	}
+
+  	#step-two {
+  		border: none;
+  		margin-top: 20%;
+  		min-width: 100%;
+  	}
+
+  	#step-three {
+  		margin-top: 20%;
+  		margin-right: -55%;
+  	}
+
+  	#step-four {
+  		border: none;
+  		margin-top: 20%;
+  	}
+
+  	/*****Work Page*****/
+
+  	#app-one-img {
+  		margin-top: -120%;
+  	}
+
+  	#a-few-short-miles h3, p {
+  		margin-top: 120%;
+  	}
+
+  	#app-two-img {
+  		margin-top: 100%;
+  	}
+
+  	#within-reach h3, p {
+  		margin-top: 5%;
+  	}
+
+  	#app-three-img {
+  		margin-top: -130%;
+  	}
+
+  	#the-best-hour h3, p {
+  		margin-top: 95%;
+  	}
+  	/*****Contact Page*****/
+
+  	#contact-page {
+  		margin-top: 400%;
+  		height: 50%;
+  	}
 }
 
