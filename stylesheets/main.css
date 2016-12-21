@@ -274,6 +274,7 @@ span {
 	#navbar li {
 		display: inline;
 		padding: 2px;
+		max-width: 90vh;
 	}
 
 	#navbar a {
@@ -293,7 +294,7 @@ span {
 
 	#about-me-blurb {
 		text-align: center;
-		margin-top: 2%;
+		margin-top: 4%;
 	}
 
 /*****Work Flow Page*****/
@@ -307,6 +308,9 @@ span {
 		margin: 0 auto;
 		height: 50%;
 	}
+	.work-flow-text h3 {
+		font-weight: bold;
+	}
 
 	.work-flow-text h3, p {
 		margin-top: 20%;
@@ -315,9 +319,9 @@ span {
 	.steps {
 		background-color: #343338;
 		height: auto;
-		margin-left: 55%;
+		margin-left: 25%;
 		padding-bottom: 20%;
-		margin-top: 5%;
+		margin-top: 15%;
 		width: 50%;
 	}
 
@@ -335,12 +339,13 @@ span {
 
   	#step-three {
   		margin-top: 20%;
-  		margin-right: -55%;
   	}
 
   	#step-four {
   		border: none;
   		margin-top: 20%;
+  		margin-left: 25%;
+  		margin-right: 25%;
   	}
 
   	/*****Work Page*****/
