@@ -273,12 +273,12 @@ span {
 
 	#navbar li {
 		display: inline;
-		padding: 2px;
 		max-width: 90vh;
 	}
 
 	#navbar a {
 		font-size: 0.7em;
+		padding: 5px;
 		display: inline;
 	}
 
@@ -319,7 +319,7 @@ span {
 	.steps {
 		background-color: #343338;
 		height: auto;
-		margin-left: 25%;
+		margin-left: 28%;
 		padding-bottom: 20%;
 		margin-top: 15%;
 		width: 50%;
@@ -339,13 +339,13 @@ span {
 
   	#step-three {
   		margin-top: 20%;
+  		margin-left: 28%;
+  		margin-right: -28%;
   	}
 
   	#step-four {
   		border: none;
   		margin-top: 20%;
-  		margin-left: 25%;
-  		margin-right: 25%;
   	}
 
   	/*****Work Page*****/
@@ -359,18 +359,19 @@ span {
   	}
 
   	#app-two-img {
-  		margin-top: 110%;
+  		margin-top: 160%;
   	}
 
   	#within-reach h3, p {
   	}
 
   	#app-three-img {
-  		margin-top: -130%;
+  		margin-top: -100%;
   	}
 
   	#the-best-hour h3, p {
-  		margin-top: 125%;
+  		margin-top: -250%;
+
   	}
   	/*****Contact Page*****/
 
