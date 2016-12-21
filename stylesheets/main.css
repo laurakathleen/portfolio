@@ -263,6 +263,13 @@ span {
 
 
 /******* Media Queries ******/
+@media (min-width: 200px) and (max-width: 375px) {
+	#navbar li {
+		padding: 2px;
+	}
+
+}
+
 @media (min-width: 200px) and (max-width: 600px) {
 
 /*****Global*****/
@@ -291,6 +298,7 @@ span {
 
 	#about-me-blurb {
 		text-align: center;
+		margin-top: -2%;
 	}
 
 /*****Work Flow Page*****/
@@ -314,6 +322,7 @@ span {
 		height: auto;
 		margin-left: 55%;
 		padding-bottom: 20%;
+		width: auto;
 	}
 
   	#step-one {
@@ -342,7 +351,7 @@ span {
   	/*****Work Page*****/
 
   	#app-one-img {
-  		margin-top: -120%;
+  		margin-top: -130%;
   	}
 
   	#a-few-short-miles h3, p {
@@ -350,25 +359,28 @@ span {
   	}
 
   	#app-two-img {
-  		margin-top: 100%;
+  		margin-top: 80%;
   	}
 
   	#within-reach h3, p {
-  		margin-top: 5%;
   	}
 
   	#app-three-img {
-  		margin-top: -130%;
+  		margin-top: -110%;
   	}
 
   	#the-best-hour h3, p {
-  		margin-top: 95%;
+  		margin-top: 75%;
   	}
   	/*****Contact Page*****/
 
   	#contact-page {
   		margin-top: 400%;
-  		height: 50%;
+  		height: 100vh;
+  	}
+
+  	.contact-info {
+  		padding-top: 50%;
   	}
 
   	.contact-text {
