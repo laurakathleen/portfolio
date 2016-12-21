@@ -284,7 +284,6 @@ span {
 
 	#box {
 		width: 60%;
-		height: 23%;
 		margin: 50% 20%;
 	}
 
@@ -292,7 +291,6 @@ span {
 
 	#about-me-blurb {
 		text-align: center;
-		margin-top:  40%;
 	}
 
 /*****Work Flow Page*****/
@@ -320,8 +318,9 @@ span {
 
   	#step-one {
   		border: none;
-  		margin-top: 194%;
-  		height: 85%;
+  		margin-top: 160%;
+  		
+  		height: 50%;
   	}
 
   	#step-two {
@@ -343,16 +342,15 @@ span {
   	/*****Work Page*****/
 
   	#app-one-img {
-  		margin-top: -125%;
- 
+  		margin-top: -120%;
   	}
 
   	#a-few-short-miles h3, p {
-  		margin-top: 150%;
+  		margin-top: 120%;
   	}
 
   	#app-two-img {
-  		margin-top: 120%;
+  		margin-top: 100%;
   	}
 
   	#within-reach h3, p {
@@ -360,11 +358,11 @@ span {
   	}
 
   	#app-three-img {
-  		margin-top: -155%;
+  		margin-top: -130%;
   	}
 
   	#the-best-hour h3, p {
-  		margin-top: 100%;
+  		margin-top: 95%;
   	}
   	/*****Contact Page*****/
 
