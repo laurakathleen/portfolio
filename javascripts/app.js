@@ -1,5 +1,5 @@
 $(function(){
-	$(document).foundation();
+	$(document).ready();
 	console.log('sanity check');
 
 	fadeInUp('#about-me-blurb', 370);
