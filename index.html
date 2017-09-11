@@ -4,25 +4,24 @@
 	<meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-	<title>Laura Russell | Full Stack Developer</title>
-	<meta name="description" content="Laura Russell is a full-stack developer with a keen eye for sleek design, located in the San Francisco Bay Area.">
+	<title>Laura Russell | Software Engineer</title>
+	<meta name="description" content="Laura Russell is a Software Engineer with a particular knack for front end development, located in the San Francisco Bay Area.">
 	<meta name="keywords" content="Laura Russell,Laura Walley,Full-Stack,Front-End,Developer,Programmer,Software Engineer,Web,Websites">
 	<meta name="google-site-verification" content="-LA1rvvXj3Gi-5nQx0qlCuOs8lnzWcAMKYVZ_MucLcs" />
 <!-- My Stylesheet -->
 <link rel="stylesheet" href="stylesheets/main.css">
 <!-- Vendor Scripts -->
 <script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 <!-- Compressed CSS -->
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 <!-- Compressed JavaScript -->
-<script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-<link href="https://fonts.googleapis.com/css?family=Poppins:300" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Poppins|Satisfy:300" rel="stylesheet">
 <!-- My JavaScript -->
 <script type="text/javascript" src="javascripts/app.js"></script>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
 </head>
 <body>
-
 	<nav class="navbar navbar-inverse navbar-fixed-top collapsed-navbar" style="background-color: #343338;" role="navigation">
      	<div class="navbar-header">
   			<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
@@ -43,131 +42,80 @@
 			</ul>
 		</div>
 	</nav>
-	<section class="page" id="home-page">
-		<div class="hero-container">
-			<div class="row">
-				<div class="col-xs-12 col-xs-offset-0 col-md-6 col-md-offset-3 text-center animated fadeInUp" id="box">
-					<h1 id="name-heading">Laura Russell</h1>
-					<h3 id="dev-heading">Full-Stack Developer</h3>
-				</div>
-			</div>
-			<img id="hero-img" alt="Hero image" src="https://static.pexels.com/photos/1322/sea-ocean-fog-mist-large.jpg">
+	<section class="page" id="home">
+		<div class="home-container">
+			<h1>Hi, my name is <span>Laura</span>.</h1>
+			<h3>Software Engineer</h3>
 		</div>
 	</section>
-	<section class="page" id="about-page">
-		<div class="expanded row">
-			<div class="col-xs-10 col-xs-offset-1 col-md-6 col-md-offset-3 text-center" id="about-me-blurb">
-				<p>My name is Laura Russell and I am a full-stack web developer in the San Francisco Bay Area, with a particular liking for that wondrous Rails magic and clean front-end design. When I'm not coding, you can find me walking my dog, shark-watching by the bay with my husband, or on a roadtrip with a front seat full of gatorade and goldfish.</p>
-			</div>
+	<section class="page" id="about">
+		<div class="text-container">
+			<p class="about-text">My name is Laura Russell and I am a Software Engineer in the San Francisco Bay Area, with a particular knack for clean and concise front-end development. I'm always looking to grow as a developer and continue adding frameworks and technologies to my toolbelt. When I'm not coding, you can find me walking my dog or on a roadtrip with a front seat full of gatorade and goldfish.</p>
 		</div>
 	</section>
-	<section class="page" id="work-flow-page">
-		<div class="expanded row work-flow-snippets">
-			<div class="col-xs-12 col-xs-offset-0 col-md-6 text-center work-flow-text">
-				<h3 class="work-flow-content" id="my-workflow-heading">My Workflow</h3>
-				<p class="work-flow-content" id="my-workflow-text">I've adopted a work flow that starts with big ideas and gets implemented in little steps.</p>
-			</div>
-			<div class="col-xs-12 col-xs-offset-0 col-md-6 col-md-offset-0 text-center">
-				<div class="expanded row all-steps">
-					<div class="col-xs-12 col-md-3 steps" id="step-one">
-						<h3>Planning:</h3>
-						<ul>
-							<li>User Stories
-							<li>Trello</li>
-							<li>Wire frames</li>
-						</ul>
-					</div>
-					<div class="col-xs-12 col-md-3 steps" id="step-two">
-						<h3>Implementation:</h3>
-						<ul>
-							<li>Reliable frameworks including</li>
-							<li>Rails</li>
-							<li>Node</li>
-							<li>Express</li>
-						</ul>
-					</div>
+	<section class="page" id="work-flow">
+		<div class="work-flow-container desc">
+			<h3>My Workflow</h3>
+			<p class="work-flow-content" id="my-workflow-text">I've adopted a work flow that starts with big ideas and gets implemented in little steps.</p>
+		</div>
+		<div class="work-flow-container chart">
+			<div class="box-structure">
+				<div class="box">
+					<h3>Planning:</h3>
+					<ul>
+						<li>User Stories</li>
+						<li>Trello</li>
+						<li>Wire frames</li>
+					</ul>
 				</div>
-				<div class="expanded row all-steps">
-					<div class="col-xs-12 col-md-3 steps" id="step-four">
-						<h3>Collaboration:</h3>
-						<ul>
-							<li>Git</li>
-							<li>Github</li>
-						</ul>
-					</div>
-					<div class="col-xs-12 col-md-3 steps" id="step-three">
-		  				<h3>Interactivity:</h3>
-						<ul>
-							<li>Ruby</li>
-							<li>JavaScript</li>
-							<li>jQuery</li>
-							<li>Angular</li>
-						</ul>
-					</div>
+				<div class="box">
+					<h3>Implementation:</h3>
+					<ul>
+						<li>Reliable frameworks including</li>
+						<li>Rails</li>
+						<li>Node</li>
+						<li>Express</li>
+					</ul>
+				</div>
+				<div class="box">
+					<h3>Collaboration:</h3>
+					<ul>
+						<li>Git</li>
+						<li>Github</li>
+					</ul>
+				</div>
+				<div class="box">
+					<h3>Interactivity:</h3>
+					<ul>
+						<li>Ruby</li>
+						<li>JavaScript</li>
+						<li>jQuery</li>
+						<li>Angular</li>
+						<li>*Currently learning React</li>
+					</ul>
 				</div>
 			</div>
 		</div>
 	</section>
-	<section class="page" id="work-page">
-		<div class="expanded row app-snippets">
-			<div class="col-xs-10 col-xs-offset-1 col-md-6 col-md-offset-0 preview" id="app-one-img">
-				<a href="https://fewshortmiles.herokuapp.com/"><img class="img-preview" id="few-short-miles-preview" alt="A Few Short Miles Image" src="stylesheets/images/Few-short-miles-team-show.png"></a>
-			</div>
-			<div class="col-xs-10 col-xs-offset-1 col-md-6 col-md-offset-0 text-center work-text" id="a-few-short-miles">
-				<h3>A Few Short Miles</h3>
-				<p>A Few Short Miles is an app I created for military families to uphold a strong community through team-focused exercise while a loved one is deployed.  Users specify their home base and their loved one's deployment location upon creating an account, which then filters out which teams they can join so that their teammates are within their own community.</p>
-				<p>I built this app myself from start to finish, using <span>Ruby on Rails</span>, <span>PostgreSQL</span>, <span>JavaScript</span>, <span>jQuery</span>, <span>Bootstrap</span>, and gems including <span>Bcrypt</span>, <span>Simple Calendars</span>, and <span>HighCharts</span>.</p>
-				<p>See it live: <span><a href="https://fewshortmiles.herokuapp.com/">A Few Short Miles</a></span></p>
-				<p>Login username: laura & password: password</p>
-			</div>
-		</div>
+	<section class="page" id="apps">
+		<h3>Apps in my spare time...</h3>
 	</section>
-	<section class="page">
-		<div class="expanded row app-snippets">
-			<div class="col-xs-10 col-xs-offset-1 col-md-6 col-md-offset-0 text-center work-text" id="within-reach">
-				<h3>Within Reach</h3>
-				<p>A mobile-friendly app that I created with three other developers in one week, geared toward users who rely on Dialectical Behavior Therapy (DBT) as part of their recovery process for eating disorders. My contributions were backend-focused, including setting up the models, controllers, routes, self-joining associations, and front-end partials. Built with <span>Ruby on Rails</span>, <span>PostgreSQL</span>, <span>JavaScript</span>, <span>jQuery</span>, <span>SASS</span>, <span>Materialize</span>, and gems including <span>Kaminari</span> and <span>Bcrypt</span>.</p>
-				<p>See it live: <span><a href="https://pacific-retreat-93110.herokuapp.com/">Within Reach</a></span></p>
-				<p>Login as a patient username: LRussell & password: password</p>
-				<p>Login as a professional username: CJ & password:  password</p>
-			</div>
-			<div class="col-xs-10 col-xs-offset-1 col-md-6 col-md-offset-0 preview" id="app-two-img">
-				<a href="https://pacific-retreat-93110.herokuapp.com/"><img class="img-preview" id="within-reach-preview" alt="Within Reach Image" src="stylesheets/images/Within-Reach-Welcome.png"></a>
-			</div>
-		</div>
-	</section>
-	<section class="page">
-		<div class="expanded row app-snippets">
-			<div class="col-xs-10 col-xs-offset-1 col-md-6 col-md-offset-0 columns preview" id="app-three-img">
-				<a href="https://morning-spire-17654.herokuapp.com/"><img class="img-preview" id="best-hour-preview" alt="The Best Hour Image" src="stylesheets/images/the-best-hour.png"></a>
-			</div>
-			<div class="col-xs-10 col-xs-offset-1 col-md-6 col-md-offset-0 text-center work-text" id="the-best-hour">
-				<h3>The Best Hour</h3>
-				<p>A full stack app that I created with one other developer in one week, designed so users can check out happy hour reviews in San Francisco. The vast majority of the backend of this project was spent pair programming either together or over Screenhero, however, I took on the front-end design for the happy hour review pages. Built with <span>MongoDB</span>, <span>Express</span>, <span>Node.js</span>, <span>Materialize</span>, <span>Javascript</span>, and <span>jQuery</span>.</p>
-				<p>See it live: <span><a href="https://morning-spire-17654.herokuapp.com/">The Best Hour</a></span></p>
-			</div>
-		</div>
-	</section>
-	<section class="page" id="contact-page">
-		<div class="expanded row contact-info">
-			<div class="col-xs-8 col-xs-offset-2 text-center contact-text">
-				<h3>Let's get in touch!</h3>
-				<p>Reach out with any questions and inquiries</p>
-				<!-- <a id="resume" href="Laura-Russell-Web-Developer-Resume.pdf" download><h5>Download my resume</h5></a> -->
-			</div>
-		</div>
-		<div class="row">
-			<div class="col-xs-8 col-xs-offset-2 text-center columns icon-container">
+	<section class="page" id="contact">
+		<div class="contact-content-container">
+			<h3 id="contact-header">Let's get in touch!</h3>
+			<p id="contact-text">Reach out with any questions and inquiries</p>
+		<!-- <a id="resume" href="Laura-Russell-Web-Developer-Resume.pdf" download><h5>Download my resume</h5></a> -->
+
+			<div class="contact-icon-container">
 				<a href="mailto:laurakaterussell@gmail.com"><img class="icon" alt="Email icon" src="stylesheets/images/email-icon.png"></a>
 				<a href="https://github.com/laurakathleen"><img class="icon" alt="Github icon" src="stylesheets/images/github-icon.png"></a>
 				<a href="https://www.linkedin.com/in/laurakathleenrussell"><img alt="LinkedIn icon" class="icon" src="stylesheets/images/linkedin-icon.png"></a>
 			</div>
 		</div>
-		<div class="row">
-			<div class="col-xs-8 col-xs-offset-2 text-center columns"> 
-				<p id="copyright">&copy Laura Russell 2016</p>
-			</div>
-		</div>	
-	</section>
+
+	</section>	
+	<div class="footer">
+		<p id="copyright">&copy Laura Russell 2017</p>
+	</div>
 </body>
 </html>
