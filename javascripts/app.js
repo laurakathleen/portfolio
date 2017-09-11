@@ -2,6 +2,11 @@ $(function(){
 	$(document).ready();
 	console.log('sanity check');
 
+	$('.nav a').on('click', function(){
+    	$('.btn-navbar').click();
+    	$('.navbar-toggle').click()
+	});
+
 	fadeInUp('#about-me-blurb', 370);
 	fadeInUp('.all-steps', 855);
 	fadeInUp('.work-flow-text', 855);
