@@ -119,7 +119,7 @@ p {
 }
 
 .work-flow-text p {
-	margin: 0 15%;
+	margin: 0 auto;
 }
 
 /*Row Class*/
@@ -347,6 +347,11 @@ p {
 	}
 
 /*****Work Page*****/
+
+	.img-preview {
+		width: 100%;
+		height: auto;
+	}
 
 	#a-few-short-miles, #within-reach, #the-best-hour {
 		width: 80%;
